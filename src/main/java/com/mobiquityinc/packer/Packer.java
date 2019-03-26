@@ -34,7 +34,8 @@ public interface Packer {
     public static String pack(String filePath) throws APIException {
 
         StringBuilder builder = new StringBuilder("");
-        List<PackingOption> packingOptions = Parser.parse(filePath);
+        String text = FileUtil.getTextFromFile(filePath);
+        List<PackingOption> packingOptions = Parser.parse(text);
 
         for(PackingOption packingOption : packingOptions){
 
