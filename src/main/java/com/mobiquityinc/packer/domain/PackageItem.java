@@ -42,7 +42,11 @@ public class PackageItem {
 
         if(obj instanceof PackageItem){
 
-            return ((PackageItem) obj).index.equals(this.index);
+            PackageItem secondPackageItem = (PackageItem) obj;
+
+            return secondPackageItem.index.equals(this.index)
+                    && secondPackageItem.getWeight().equals(this.weight)
+                    && secondPackageItem.getCost().equals(this.cost);
 
         } else {
 

@@ -85,6 +85,14 @@ public class Parser {
         return packageItemList;
     }
 
+    /**
+     * convert the string representation of package item to PackageItem object
+     * e.g. (1,53.38,45) => PackageItem(index: 1, weight: 53.38, cost: 45)
+     *
+     * @param packageItemString
+     * @return
+     * @throws APIException
+     */
     public static PackageItem getPackageItemFromString(String packageItemString) throws APIException {
 
         //remove braces and split by commas (,)
