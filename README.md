@@ -3,9 +3,10 @@
 Determine which things to put into the package that the total weight is less than or equal to the package limit and the total cost is as large as possible. 
 Send a package which weights less in case there is more than one package with the same price.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+So your signature should look like
+```
+public static String pack(String filePath) throws APIException
+```
 
 ### Input sample
 
