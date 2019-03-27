@@ -5,14 +5,14 @@ import com.mobiquityinc.packer.exception.APIException;
 import java.io.*;
 import java.util.stream.Collectors;
 
-public interface FileUtil {
+public class FileUtil {
 
     /**
      * Reads file content and return content as String
      *
      * @return
      */
-    static String getTextFromFile(String path) throws APIException {
+    public static String getTextFromFile(String path) throws APIException {
 
         File file = new File(path);
         BufferedReader reader = null;

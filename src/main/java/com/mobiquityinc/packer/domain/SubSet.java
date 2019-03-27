@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Holds a subset of the power set of all package items
+ * Holds a subset of the power set of all possible combination of package items
  */
 public class SubSet {
 

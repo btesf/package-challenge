@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public interface Parser {
+public class Parser {
 
     static int MAX_ALLOWED_NUMBER_OF_PACKAGES = 15;
     /**
@@ -19,7 +19,7 @@ public interface Parser {
      * @return
      * @throws APIException
      */
-    static String[] getStringLines(String text) throws APIException {
+    public static String[] getStringLines(String text) throws APIException {
 
         if (text == null || text.trim().equals("")) {
 
@@ -36,7 +36,7 @@ public interface Parser {
      *
      * @param packageListing
      */
-    static void validatePackageListingString(String packageListing) throws APIException {
+    public static void validatePackageListingString(String packageListing) throws APIException {
 
         boolean isValid = packageListing.matches("^[0-9.]+:(\\([0-9]+,[0-9.]+,[0-9.]+\\))*$");
 
@@ -52,7 +52,7 @@ public interface Parser {
      * @param packageListing
      * @return
      */
-    static String cleanupPackageListingString(String packageListing) {
+    public static String cleanupPackageListingString(String packageListing) {
 
         return packageListing.trim().replaceAll("[\\s€]", "");
     }
@@ -65,7 +65,7 @@ public interface Parser {
      * @param packageItems
      * @return
      */
-    static List<String> separatePackageItems(String packageItems) {
+    public static List<String> separatePackageItems(String packageItems) {
 
         List<String> packageItemList = new ArrayList<>();
         Pattern pattern = Pattern.compile("(\\([0-9]+,[0-9.]+,[0-9.]+\\))?+");
@@ -85,7 +85,7 @@ public interface Parser {
         return packageItemList;
     }
 
-    static PackageItem getPackageItemFromString(String packageItemString) throws APIException {
+    public static PackageItem getPackageItemFromString(String packageItemString) throws APIException {
 
         //remove braces and split by commas (,)
         packageItemString = packageItemString.replaceAll("[()]", "");
@@ -118,7 +118,7 @@ public interface Parser {
      * @param line
      * @return
      */
-    static PackingOption getPackingOptionFromString(String line) throws APIException {
+    public static PackingOption getPackingOptionFromString(String line) throws APIException {
         //split line to max weight and package item list sections:
         String[] sections = line.split(":");
 
@@ -157,7 +157,7 @@ public interface Parser {
      * @return
      * @throws APIException
      */
-    static List<PackingOption> getPackagingOptions(String text) throws APIException {
+    public static List<PackingOption> getPackagingOptions(String text) throws APIException {
 
         List<PackingOption> packingOptions = new ArrayList<>();
 
@@ -175,7 +175,7 @@ public interface Parser {
     }
 
 
-    static List<PackingOption> parse(String text) throws APIException {
+    public static List<PackingOption> parse(String text) throws APIException {
 
         if(text == null || text.trim().equals("")){
 
