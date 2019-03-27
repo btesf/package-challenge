@@ -1,5 +1,7 @@
 package com.mobiquityinc.packer.domain;
 
+import java.util.Objects;
+
 public class PackageItem {
 
     private Integer index;
@@ -52,5 +54,11 @@ public class PackageItem {
 
             return false;
         }
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(index, weight, cost);
     }
 }

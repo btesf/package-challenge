@@ -196,7 +196,7 @@ public class ParserTest {
         PackingOption packingOption2 = new PackingOption(30d);
 
         packingOption1.setPackageItems(Arrays.asList(new PackageItem(1, 53.38d, 45d)));
-        packingOption2.setPackageItems(Arrays.asList(new PackageItem(2, 11d, 20d)));
+        packingOption2.setPackageItems(Arrays.asList(new PackageItem(2, 10d, 20d)));
         expectedPackingOptionList.add(packingOption1);
         expectedPackingOptionList.add(packingOption2);
 
@@ -209,14 +209,14 @@ public class ParserTest {
             PackingOption computedPackingOption = packingOptionList.get(0);
             assertEquals(computedPackingOption.getMaximumWeight(), packingOption.getMaximumWeight());
             assertThat(computedPackingOption.getPackageItems().size(), is(1));
-    //assertThat(computedPackingOption.getPackageItems(), contains(packingOption.getPackageItems().get(0)));
+            assertThat(computedPackingOption.getPackageItems(), is(packingOption.getPackageItems()));
 
             //check for first packing option in expectedPackingOptionList
             packingOption = expectedPackingOptionList.get(1);
             computedPackingOption = packingOptionList.get(1);
             assertEquals(computedPackingOption.getMaximumWeight(), packingOption.getMaximumWeight());
             assertThat(computedPackingOption.getPackageItems().size(), is(1));
-    //assertThat(computedPackingOption.getPackageItems(), contains(packingOption.getPackageItems().get(0)));
+            assertThat(computedPackingOption.getPackageItems(), is(packingOption.getPackageItems()));
 
         } catch (APIException e) {
 

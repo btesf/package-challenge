@@ -16,14 +16,14 @@ public class SubSetTest {
         SubSet subSet = new SubSet();
 
         packageItems.add(new PackageItem(1, 10d, 15d));
-        packageItems.add(new PackageItem(1, 10d, 15d));
-        packageItems.add(new PackageItem(1, 10d, 15d));
+        packageItems.add(new PackageItem(2, 10d, 15d));
+        packageItems.add(new PackageItem(3, 10d, 15d));
         subSet.setPackageItems(packageItems);
 
         subSet.calculateTotals();
 
-        assertEquals(subSet.getTotalCost().doubleValue(), 45d, 0);
-        assertEquals(subSet.getTotalWeight().doubleValue(), 30d, 0);
+        assertEquals(subSet.getTotalCost(), 45d, 0);
+        assertEquals(subSet.getTotalWeight(), 30d, 0);
 
     }
 }

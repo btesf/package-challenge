@@ -73,11 +73,11 @@ public interface Packer {
      *
      * Creates a power set of (all possible combinations of) PackageItems.
      *
-     * e.g. for two PackageItems in a set {(1,53.38,$45)(2,88.62,$98)} the power set will be:
+     * e.g. for two PackageItems in a set {(1,53.38,€45)(2,88.62,€98)} the power set will be:
      *
-     * {(1,53.38,$45)},
-     * {(2,88.62,$98)},
-     * {(1,53.38,$45)(2,88.62,$98)}
+     * {(1,53.38,€45)},
+     * {(2,88.62,€98)},
+     * {(1,53.38,€45)(2,88.62,€98)}
      *
      *
      * @param packageItemList
