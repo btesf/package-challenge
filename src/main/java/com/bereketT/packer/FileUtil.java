@@ -1,6 +1,6 @@
-package com.mobiquityinc.packer;
+package com.bereketT.packer;
 
-import com.mobiquityinc.packer.exception.APIException;
+import com.bereketT.packer.exception.APIException;
 
 import java.io.*;
 import java.util.stream.Collectors;

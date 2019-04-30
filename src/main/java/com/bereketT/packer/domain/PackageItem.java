@@ -1,4 +1,4 @@
-package com.mobiquityinc.packer.domain;
+package com.bereketT.packer.domain;
 
 import java.util.Objects;
 

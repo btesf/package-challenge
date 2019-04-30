@@ -1,5 +1,5 @@
-import com.mobiquityinc.packer.FileUtil;
-import com.mobiquityinc.packer.exception.APIException;
+import com.bereketT.packer.FileUtil;
+import com.bereketT.packer.exception.APIException;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,7 +22,7 @@ public class FileUtilTest {
 
         try {
 
-            FileUtil.getTextFromFile("non_existent_file.txt");
+            FileUtil.getTextFromFile("non_existent_files.txt");
             fail("APIException should have been thrown here");
 
         } catch (APIException e) {

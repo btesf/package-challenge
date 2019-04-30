@@ -1,7 +1,7 @@
-import com.mobiquityinc.packer.Packer;
-import com.mobiquityinc.packer.domain.PackageItem;
-import com.mobiquityinc.packer.domain.SubSet;
-import com.mobiquityinc.packer.exception.APIException;
+import com.bereketT.packer.Packer;
+import com.bereketT.packer.domain.PackageItem;
+import com.bereketT.packer.domain.SubSet;
+import com.bereketT.packer.exception.APIException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

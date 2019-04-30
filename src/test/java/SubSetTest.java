@@ -1,5 +1,5 @@
-import com.mobiquityinc.packer.domain.PackageItem;
-import com.mobiquityinc.packer.domain.SubSet;
+import com.bereketT.packer.domain.PackageItem;
+import com.bereketT.packer.domain.SubSet;
 import org.junit.Test;
 
 import java.util.ArrayList;

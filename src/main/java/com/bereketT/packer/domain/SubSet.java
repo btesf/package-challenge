@@ -1,4 +1,4 @@
-package com.mobiquityinc.packer.domain;
+package com.bereketT.packer.domain;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

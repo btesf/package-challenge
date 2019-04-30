@@ -1,9 +1,9 @@
-package com.mobiquityinc.packer;
+package com.bereketT.packer;
 
-import com.mobiquityinc.packer.domain.PackageItem;
-import com.mobiquityinc.packer.domain.PackingOption;
-import com.mobiquityinc.packer.domain.SubSet;
-import com.mobiquityinc.packer.exception.APIException;
+import com.bereketT.packer.domain.PackageItem;
+import com.bereketT.packer.domain.PackingOption;
+import com.bereketT.packer.domain.SubSet;
+import com.bereketT.packer.exception.APIException;
 
 import java.util.ArrayList;
 import java.util.List;

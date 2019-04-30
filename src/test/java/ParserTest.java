@@ -1,7 +1,7 @@
-import com.mobiquityinc.packer.Parser;
-import com.mobiquityinc.packer.domain.PackageItem;
-import com.mobiquityinc.packer.domain.PackingOption;
-import com.mobiquityinc.packer.exception.APIException;
+import com.bereketT.packer.Parser;
+import com.bereketT.packer.domain.PackageItem;
+import com.bereketT.packer.domain.PackingOption;
+import com.bereketT.packer.exception.APIException;
 import org.junit.Test;
 
 import java.util.ArrayList;
